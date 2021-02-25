@@ -208,7 +208,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="🤴My Owner🤴",
-                             text="⚔️Can't Reveal⚔️")
+                             url="https://t.me/AttackOnTitans_Mikasa_Bot")
                      ],
                      [
                          InlineKeyboardButton(
