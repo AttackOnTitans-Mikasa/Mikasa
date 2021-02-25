@@ -213,7 +213,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="😇Source Code😇",
-                             url="https://github.com/AOT/Mikasa")
+                             url="https://github.com/AttackOnTitans-Mikasa/Mikasa")
                      ]]))
     else:
         update.effective_message.reply_text(
