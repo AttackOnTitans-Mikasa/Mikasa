@@ -290,7 +290,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' [<a href="https://telegram.me/Romeo_JulietBot_Support/65">?</a>]'.format(
+        text += ' [<a href="https://t.me/Mikasa_Updates/3">?</a>]'.format(
             bot.username)
 
     try:
@@ -404,7 +404,7 @@ def users(update: Update, context: CallbackContext):
     process = subprocess.Popen(
         "neofetch --stdout", shell=True, text=True, stdout=subprocess.PIPE)
     output = process.communicate()[0]
-    users = "<b><i>Current stats:</i></b>\n<b><i>Loaded from Romeo Database...✅</i></b>\n" + "\n" + output + "\n".join(
+    users = "<b><i>Current stats:</i></b>\n<b><i>Loaded from Mikasa's Database...✅</i></b>\n" + "\n" + output + "\n".join(
         [mod.__stats__() for mod in STATS])
     result = re.sub(r'(\d+)', r'<code>\1</code>', users)
     update.effective_message.reply_text(result, parse_mode=ParseMode.HTML)
@@ -516,7 +516,7 @@ Examples:
  • `/info`*:* get information about a user. 
  
 *What is that health thingy?*
- Come and see [HP System explained](https://telegram.me/Romeo_JulietBot_Support/66)
+ Come and see [HP System explained](https://t.me/Mikasa_Updates/4)
 """
 
 SET_BIO_HANDLER = DisableAbleCommandHandler("setbio", set_about_bio)
