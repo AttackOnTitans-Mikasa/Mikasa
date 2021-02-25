@@ -75,7 +75,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-AOT_IMG = "https://telegra.ph/file/10cbaa34add95aff4d668.jpg"
+AOT_IMG = "https://telegra.ph/file/879164d7bd55cff55d3e5.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -184,7 +184,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                ROMEO_IMG,
+                AOT_IMG,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
