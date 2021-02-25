@@ -52,13 +52,13 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 Hi {}, my name is {}! 
-I am a Superb Group Management Bot.
+I am an AOT Anime based Group Moderator...
 You can find my list of available commands with /help.
 """
 
 HELP_STRINGS = """
 Hey there! My name is *{}*.
-I'm a Telegram Group Management Bot and help admins/owners manage their groups in easy way! Have a look at the following for an idea of some of \
+I am an AOT Anime based Group Moderator... Have a look at the following for an idea of some of \
 the things I can help you with.
 
 *Main* commands available:
@@ -75,7 +75,7 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-ROMEO_IMG = "https://telegra.ph/file/929a3cffe8935f0a445e6.jpg"
+AOT_IMG = "https://telegra.ph/file/10cbaa34add95aff4d668.jpg"
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -193,31 +193,31 @@ def start(update: Update, context: CallbackContext):
                 reply_markup=InlineKeyboardMarkup(
                     [[
                         InlineKeyboardButton(
-                            text="☑️ Add Romeo to your group",
+                            text="👸Invite me to your chat.👸",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username))
                     ],
                      [
                          InlineKeyboardButton(
-                             text="🚑 Support Channel",
-                             url=f"https://t.me/Romeo_JulietBot_Support"),
+                             text="❤️Mikasa❤️",
+                             url=f"https://t.me/AOT_Mikasa_Bot"),
                          InlineKeyboardButton(
-                             text="Support Chat 🚑",
-                             url="https://t.me/Romeo_JulietBotSupport")
+                             text="🏹Updates Channel🏹",
+                             url="https://t.me/Mikasa_Updates")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🧑‍💻Developer🧑‍💻",
-                             url="https://t.me/Warning_MadBoy_is_Here")
+                             text="🤴My Owner🤴",
+                             text="⚔️Can't Reveal⚔️")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="🗄 Source code",
-                             url="https://github.com/madboy482/Romeo")
+                             text="😇Source Code😇",
+                             url="https://github.com/AOT/Mikasa")
                      ]]))
     else:
         update.effective_message.reply_text(
-            "Yuus, I'm Online!😉😉\n<b>Haven't slept since:👀</b> <code>{}</code>"
+            "Yeah, I'm Ready👍🙂\n<b>Haven't slept since: </b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
