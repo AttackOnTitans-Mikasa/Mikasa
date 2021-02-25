@@ -2,6 +2,8 @@
 
 # Mikasa
 
+# Forked from <i>[Romeo](https://github.com/madboy482/Romeo)</i>, Special Thanks to <i>[@madboy482](https://github.com/madboy482)</i>....
+
 [![Updates channel!](https://img.shields.io/badge/Join%20Channel-!-red)](https://telegram.me/Mikasa_Updates)
 
 
